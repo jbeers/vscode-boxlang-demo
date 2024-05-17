@@ -1,0 +1,26 @@
+<bx:output>
+    <bx:script>
+        circ = new Circle( url.radius ?: 5 );
+
+        colors = [
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "blue",
+            "purple"
+        ];
+
+        function pickRandom( required array arr ){
+            return arr[ randRange( 1, arr.len() ) ];
+        }
+    </bx:script>
+    <h1>Behold, a circle:</h1>
+    <ul>
+        <li>Radius: #circ.getRadius()#</li>
+        <li>Circumference: #circ.getCircumference()#</li>
+        <li>Color: #pickRandom( colors )#</li>
+    </ul>
+    <p>Last ran: #now()#</p>
+    
+    </bx:output>

@@ -1,0 +1,18 @@
+
+
+colors = [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "purple"
+];
+
+function pickRandom( required array arr ){
+    return arr[ randRange( 1, arr.len() ) ];
+}
+
+circ = new Circle( 5 );
+
+printLn( circ.toString( pickRandom( colors ) ) );
